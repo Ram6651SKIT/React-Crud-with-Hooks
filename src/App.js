@@ -44,7 +44,7 @@ const App =() =>{
 
   return(
     <div className="container">
-    <h4 className="h4">React CRUD Application </h4>
+    <h4 className="h4">React CRUD Application with Hooks </h4>
     <div className="row">
     <div className="col-md-3">
     <div className="flex-large">
