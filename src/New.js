@@ -3,12 +3,12 @@ import UserTable from './components/UserTable';
 import EditUserForm from './components/EditUserForm';
 import AddUserForm from './components/AddUserForm';
 
-const App =() =>{
-  const userData=[
-    {id:1,firstname:"Ram",lastname:"Yaragarla",age:"23",gender:"male",dateofjoining:"04-12-2018"},
-    {id:2,firstname:"Sandy",lastname:"SK",age:"23",gender:"male",dateofjoining:"04-12-2018"},
-    {id:3,firstname:"Naga",lastname:"naidu",age:"43",gender:"male",dateofjoining:"04-12-2018"},
-  ]
+const New =() =>{
+    const userData=[
+        {id:1,firstname:"Ram",lastname:"Yaragarla",age:"23",gender:"male",dateofjoining:"04-12-2018"},
+        {id:2,firstname:"Sandy",lastname:"SK",age:"23",gender:"male",dateofjoining:"04-12-2018"},
+        {id:3,firstname:"Naga",lastname:"naidu",age:"43",gender:"male",dateofjoining:"04-12-2018"},
+      ]
   const [users,setUsers]=useState(userData)
 
   const addUser=user=>{
@@ -44,9 +44,9 @@ const App =() =>{
 
   return(
     <div className="container">
-    <h4 className="h4">React CRUD Application </h4>
+    {/* <h4 className="h4">React CRUD Application </h4> */}
     <div className="row">
-    <div className="col-md-3">
+    <div className="col-md-6">
     <div className="flex-large">
   {editing ? (
     <div>
@@ -57,6 +57,7 @@ const App =() =>{
         currentUser={currentUser}
         updateUser={updateUser}
       />
+      <UserTable users={users} editRow={editRow} />
     </div>
   ) : (
     <div>
@@ -67,7 +68,7 @@ const App =() =>{
 </div>
     </div>
     <div className="col-md-9">
-    <UserTable users={users} editRow={editRow} deleteUser={deleteUser}/>
+    {/* <UserTable users={users} editRow={editRow} deleteUser={deleteUser}/> */}
     </div>
     </div>
     
@@ -77,4 +78,4 @@ const App =() =>{
 
 
 
-export default App;
+export default New;
