@@ -29,7 +29,7 @@ const handleInputChange = event => {
             </FormGroup>
             <FormGroup>
               <Label for="lastname">Last Name</Label>
-              <Input type="text"  required name="lastname" placeholder="Enter Last Name" value={user.lastname}  onChange={handleInputChange}/>
+              <Input type="text"  required name="lastname" placeholder="Enter the  Last Name" value={user.lastname}  onChange={handleInputChange}/>
             </FormGroup>
             <FormGroup>
               <Label for="age">Age</Label>
@@ -37,7 +37,7 @@ const handleInputChange = event => {
             </FormGroup>
 
             <FormGroup>
-              <Label for="gender">Gender</Label>
+              <Label for="gender">Gender *****</Label>
               <Input type="text"  required name="gender" placeholder="Male || Female" value={user.gender}  onChange={handleInputChange}/>
             </FormGroup>
 
