@@ -7,7 +7,7 @@ const App =() =>{
   const userData=[
     {id:1,firstname:"Ram",lastname:"Yaragarla",age:"23",gender:"male",dateofjoining:"04-12-2018"},
     {id:2,firstname:"Sandy",lastname:"SK",age:"23",gender:"male",dateofjoining:"04-12-2018"},
-    {id:3,firstname:"Naga",lastname:"naidu",age:"43",gender:"male",dateofjoining:"04-12-2018"},
+    {id:3,firstname:"Vinay",lastname:"Wolftain",age:"43",gender:"male",dateofjoining:"04-12-2018"},
   ]
   const [users,setUsers]=useState(userData)
 
@@ -60,7 +60,7 @@ const App =() =>{
     </div>
   ) : (
     <div>
-      <h4 className="adduser">Add User</h4>
+      <h4 className="adduser">Add New User</h4>
       <AddUserForm addUser={addUser} />
     </div>
   )}
